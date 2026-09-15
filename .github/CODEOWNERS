@@ -1,1 +1,5 @@
+# Règle par défaut : responsable de tout le dépôt
+* @ProjetClasse
+
+# Dossier DATABASE entier protégé
 /DATABASE/* @ProjetClasse
