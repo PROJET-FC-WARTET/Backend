@@ -26,3 +26,6 @@ le **Project** du repo.
 Certains fichiers nécessitent une validation du professeur avant fusion
 (voir `.github/CODEOWNERS`). Vous pouvez toujours proposer une modification
 via Pull Request — elle sera simplement examinée avant intégration.
+
+
+"Ceci est un test de Pull Request"
