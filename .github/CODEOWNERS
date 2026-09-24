@@ -1,5 +1,5 @@
 # Règle par défaut : responsable de tout le dépôt
-* @ProjetClasse
+* @ProjetClasse @BlacksheepMaster
 
 # Dossier DATABASE entier protégé
 /DATABASE/* @ProjetClasse
