@@ -1,5 +1,29 @@
-# Règle par défaut : responsable de tout le dépôt
+# CODEOWNERS - Dépôt Backend
+# Définit les responsables de la relecture des Pull Requests.
+# Syntaxe : motif_de_fichier @utilisateur1 @utilisateur2
+
+# Règle par défaut : tout le dépôt
 * @ProjetClasse @BlacksheepMaster
 
-# Dossier DATABASE entier protégé
-/DATABASE/* @ProjetClasse
+# Fichiers de déploiement et configuration sensible
+/deploy.yml @ProjetClasse @BlacksheepMaster
+/database/config.yml @ProjetClasse @@BlacksheepMaster
+/.env* @ProjetClasse @BlacksheepMaster
+
+# Base de données : migrations, modèles, procédures, seeds
+/DATABASE/Migrations/* @ProjetClasse @BlacksheepMaster
+/DATABASE/Models/* @ProjetClasse @BlacksheepMaster
+/DATABASE/Procedures/* @ProjetClasse @BlacksheepMaster
+/DATABASE/Seeds/* @ProjetClasse @BlacksheepMaster
+
+# Authentification et sécurité
+/auth/* @ProjetClasse @BlacksheepMaster
+
+# API (routes et contrôleurs)
+/API/* @ProjetClasse @BlacksheepMaster
+
+# Code partagé
+/SHARED/* @ProjetClasse @BlacksheepMaster
+
+# Workflows GitHub Actions
+/.github/workflows/* @ProjetClasse @BlacksheepMaster
